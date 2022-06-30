@@ -23,7 +23,10 @@ ________________________________________________________
   ````
   ./compiler [assembly_program] # Output to the folder as program name
   ````
-  
+5. Package Installation
+  ````
+  sudo apt install as31 nasm  
+  ````
 #### Comamnd Used
 ````
 nasm -f elf64 assembly_program_name.asm 
