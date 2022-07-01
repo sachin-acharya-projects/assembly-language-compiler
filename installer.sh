@@ -11,7 +11,7 @@ wget "https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/
 echo -e $CYAN"Unzipping Files"
 unzip assembly-language-compiler.zip
 
-chmod +x assembly-language-compiler/compiler.sh
+chmod +x assembly-language-compiler/compiler
 rm assembly-language-compiler.zip
 
 echo -e $CYAN"Installation is complete."
