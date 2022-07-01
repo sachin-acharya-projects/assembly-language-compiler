@@ -18,9 +18,9 @@ if os.path.exists(FOLDER):
     query = input("")
     if not query.lower() == 'n':
         os.system(f"rm -r {FOLDER}")
-        print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
-        os.system(f"unzip {FILENAME}")
-        os.system(f"chmod +x {FOLDER}/compiler")
+print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
+os.system(f"unzip {FILENAME}")
+os.system(f"chmod +x {FOLDER}/compiler")
 os.system(f"rm {FILENAME}")
 print(f"{Fore.LIGHTCYAN_EX}Creating Alias assembly_compiler for compiler")
 os.chdir(FOLDER)
@@ -28,7 +28,7 @@ os.chdir(FOLDER)
 try:
     subprocess.check_output("cat ~/.bashrc | grep 'alias assembly_compiler'", shell=True)
 except subprocess.CalledProcessError:
-    os.system("\"alias assembly_compiler='$PWD/compiler'\" >> ~/.bashrc")
+    os.system("echo \"alias assembly_compiler='$PWD/compiler'\" >> ~/.bashrc")
     os.system("source ~/.bashrc")
 
 print(f"""{Fore.LIGHTMAGENTA_EX}Installation has been completed
