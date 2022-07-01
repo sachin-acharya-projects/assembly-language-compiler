@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os, sys, subprocess
 from colorama import init, Fore; init(autoreset=True)
 
