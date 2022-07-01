@@ -17,3 +17,4 @@ rm assembly-language-compiler.zip
 echo -e $CYAN"Installation is complete."
 cd assembly-language-compiler
 echo "export PATH=$PATH:'$PWD'" >> ~/.bashrc
+source ~/.bashrc
