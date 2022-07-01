@@ -28,6 +28,7 @@ then
         echo -e $CYAN"Unzipping Files"
         unzip assembly-language-compiler.zip
         chmod +x assembly-language-compiler/compiler
+        chmod +x assembly-language-compiler/package_install.sh
     fi
 else
     echo -e $CYAN"Unzipping Files"

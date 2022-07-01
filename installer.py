@@ -13,6 +13,7 @@ def download():
     print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
     os.system(f"unzip {FILENAME}")
     os.system(f"chmod +x {FOLDER}/compiler")
+    os.system(f"chmod +x {FOLDER}/package_install.sh")
 print(f"{Fore.LIGHTCYAN_EX}Downloading Required file from GitHub")
 print(f"{Fore.LIGHTCYAN_EX}URL\nhttps://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/dist/assembly-language-compiler.zip")
 os.system("wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/dist/assembly-language-compiler.zip")
