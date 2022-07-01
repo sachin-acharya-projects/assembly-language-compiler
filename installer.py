@@ -2,7 +2,7 @@ import os, sys, subprocess
 from colorama import init, Fore; init(autoreset=True)
 
 FILENAME = 'assembly-language-compiler.zip'
-FOLDER = os.path.splitext(FILENAME)
+FOLDER = os.path.splitext(FILENAME)[0]
 
 if os.path.exists(FILENAME):
     print(f"{Fore.GREEN}Required File Already Exist. Deleting the Old file and downloading new file")
@@ -16,7 +16,6 @@ if os.path.exists(FOLDER):
     print(f"{Fore.LIGHTGREEN_EX}Press ENTER to Delete Old Folder and Create New Folder with New Data")
     print(f"{Fore.LIGHTGREEN_EX}Enter N to continue as it it")
     query = input("")
-    
     if not query.lower() == 'n':
         os.system(f"rm -r {FOLDER}")
         print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
