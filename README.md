@@ -3,6 +3,11 @@ This just an automation of Assembly Language Translation. This file only execute
 ________________________________________________________
 
 #### Install
+**Installation with Bash Script**
+````
+wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/installer.sh
+````
+**Cloning from Github Repository**
 1. Clone Github Repository
 
   ````
