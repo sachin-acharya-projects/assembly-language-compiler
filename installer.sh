@@ -28,6 +28,10 @@ then
         unzip assembly-language-compiler.zip
         chmod +x assembly-language-compiler/compiler
     fi
+else
+    echo -e $CYAN"Unzipping Files"
+    unzip assembly-language-compiler.zip
+    chmod +x assembly-language-compiler/compiler
 fi
 
 rm assembly-language-compiler.zip
