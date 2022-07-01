@@ -18,3 +18,6 @@ echo -e $CYAN"Installation is complete."
 cd assembly-language-compiler
 echo "alias assembly_compiler='$PWD/compiler'" >> ~/.bashrc
 source ~/.bashrc
+echo -e $CYAN"Run assembly_compiler [filename] to compiler"
+echo -e $CYAN"If assembly_compiler: command not found error occured, please run the following command or restart the computer."
+echo -e $CYAN"source ~/.bashrc"
