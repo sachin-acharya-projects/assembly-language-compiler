@@ -20,7 +20,8 @@ wget "https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/
 if [ -d "$FOLDER" ]
 then
     echo "Installation Folder Already Exist."
-    read -p "Enter [Y/N] to delete existing folder and installing new\n" query
+    echo "Enter [Y/N] to delete existing folder and installing new"
+    read -p "[Y/N]: " query
     if [ ${query,,} = 'y' ]
     then
         rm -r $FOLDER
