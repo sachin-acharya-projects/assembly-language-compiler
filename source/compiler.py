@@ -23,6 +23,7 @@ if not os.path.exists(log_location):
     with open(log_location, "w") as log:
         log.close()
     print("{}Checking for required packages".format(Fore.CYAN))
+    os.system("chmod +x {}".format(os.path.join(BASE_PATH, "package_install.sh")))
     os.system("sudo " + os.path.join(BASE_PATH, "package_install.sh"))
 
 if not os.path.exists(save_location):
