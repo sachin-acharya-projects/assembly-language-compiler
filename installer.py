@@ -7,6 +7,10 @@ FOLDER = os.path.splitext(FILENAME)[0]
 if os.path.exists(FILENAME):
     print(f"{Fore.GREEN}Required File Already Exist. Deleting the Old file and downloading new file")
     os.remove(FILENAME)
+def download():
+    print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
+    os.system(f"unzip {FILENAME}")
+    os.system(f"chmod +x {FOLDER}/compiler")
 print(f"{Fore.LIGHTCYAN_EX}Downloading Required file from GitHub")
 print(f"{Fore.LIGHTCYAN_EX}URL\nhttps://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/dist/assembly-language-compiler.zip")
 os.system("wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/dist/assembly-language-compiler.zip")
@@ -18,9 +22,9 @@ if os.path.exists(FOLDER):
     query = input("")
     if not query.lower() == 'n':
         os.system(f"rm -r {FOLDER}")
-print(f"{Fore.LIGHTCYAN_EX}Unzipping File")
-os.system(f"unzip {FILENAME}")
-os.system(f"chmod +x {FOLDER}/compiler")
+        download()
+else:
+    download()
 os.system(f"rm {FILENAME}")
 print(f"{Fore.LIGHTCYAN_EX}Creating Alias assembly_compiler for compiler")
 os.chdir(FOLDER)
