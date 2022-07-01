@@ -3,7 +3,7 @@ This just an automation of Assembly Language Translation. This file only execute
 ________________________________________________________
 
 #### Install
-**Installation with Bash Script**
+**Installation Source Files**
 (_Choose one of the following installer_)
 1. Bash Script
 
@@ -14,6 +14,11 @@ ________________________________________________________
 
     ````
     wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/installer
+    ````
+3. Python File
+
+    ````
+    wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/installer.py
     ````
     
   ````
