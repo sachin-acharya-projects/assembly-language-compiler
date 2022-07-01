@@ -40,7 +40,7 @@ os.system(f"ld -s -o {save_location}/{filename} {save_location}/{filename}.o")
 print(f"{Fore.CYAN}4. Output to {save_location}")
 print("")
 
-os.system("chmod +x {}/{}".format(BASE_PATH, save_location, filename))
+os.system("chmod +x {}/{}".format(save_location, filename))
 
 print("{}Output".format(Fore.CYAN))
 os.system(f"{save_location}/{filename}")
