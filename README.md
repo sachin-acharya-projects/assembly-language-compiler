@@ -7,6 +7,12 @@ ________________________________________________________
 ````
 wget https://github.com/sachin-acharya-projects/assembly-language-compiler/raw/main/installer.sh
 ````
+````
+chmod +x installer.sh
+````
+````
+./installer.sh
+````
 **Cloning from Github Repository**
 1. Clone Github Repository
 
