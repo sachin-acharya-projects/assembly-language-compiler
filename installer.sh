@@ -26,8 +26,9 @@ then
   rm -r $FOLDER
   echo -e $CYAN"Unzipping Files"
   unzip assembly-language-compiler.zip
-
   chmod +x assembly-language-compiler/compiler
+ fi
+fi
 rm assembly-language-compiler.zip
 
 echo -e $CYAN"Installation is complete."
@@ -37,6 +38,7 @@ if [ "" = "$ALIAS_EX" ]
 then
  echo "alias assembly_compiler='$PWD/compiler'" >> ~/.bashrc
  source ~/.bashrc
+fi
 echo -e $CYAN"Run assembly_compiler [filename] to compiler"
 echo -e $CYAN"If assembly_compiler: command not found error occured, please run the following command or restart the computer."
 echo -e $CYAN"source ~/.bashrc"
