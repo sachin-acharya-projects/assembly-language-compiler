@@ -1,6 +1,5 @@
 # assembly-language-compiler
 This just an automation of Assembly Language Translation. This file only execute certain commands to translate assembly code.
-________________________________________________________
 
 #### Install
 **Installation Source Files**
@@ -55,11 +54,11 @@ ________________________________________________________
 5. Package Installation
   
     ````
-    sudo apt install as31 nasm  
+    sudo apt install as31 nasm
     ````
 #### Comamnd Used
 ````
-nasm -f elf64 assembly_program_name.asm 
+nasm -f elf64 assembly_program_name.asm
 ld -s -o assembly_program_name assembly_program_name.o
 ./assembly_program_name
 ````
